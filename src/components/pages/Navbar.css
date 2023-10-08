@@ -1,0 +1,49 @@
+/* Navbar.css */
+
+/* Style for the navbar itself */
+.navbar {
+    background-color: white;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+  }
+  
+  /* Style for the brand/logo */
+  .navbar-brand {
+    color: blue;
+    font-weight: bold;
+    display: flex;
+    align-items: center; /* Vertically center items */
+    margin-right: auto; /* Push "Family of Yahweh" to the left */
+  }
+  
+  /* Style for the image in the brand/logo */
+  .navbar-brand img {
+    width: 40px; /* Set your desired width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px;
+  }
+  
+  /* Style for the navigation links */
+  .navbar-nav {
+    justify-content: flex-end; /* Push links to the right */
+    margin-right: 20px; /* Add space between links and right edge of Navbar */
+  }
+  
+  /* Style for individual links */
+  .nav-link {
+    color: black;
+    margin-right: 20px; /* Add space between links */
+    position: relative; /* Create space for the hover effect */
+    transition: color 0.3s; /* Smooth color transition on hover */
+  }
+  
+  /* Style for the link's hover effect (bottom border) */
+  .nav-link:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: blue;
+  }
+  
