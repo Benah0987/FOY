@@ -1,16 +1,20 @@
 /* Footer.css */
 
+/* Style for the whole body content */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 /* Style for the footer itself */
 footer {
-    background-color: #007bff; /* Use your desired background color */
-    padding: 10px 0; /* Adjust the padding as needed */
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
-  
-  /* Style for the text in the footer */
-  footer p {
-    margin-bottom: 0;
-  }
-  
+  background-color: #007bff; /* Use your desired background color */
+  padding: 10px 0; /* Adjust the padding as needed */
+  width: 100%;
+}
+
+/* Style for the text in the footer */
+footer p {
+  margin-bottom: 0;
+}
