@@ -15,13 +15,64 @@
     color: white; /* White text */
     font-size: 4.5em; /* Adjust the font size as needed */
     font-weight: bold; /* Use a bold font weight */
-    text-align: center; /* Center text within the hero section */
+    text-align: left; /* Center text within the hero section */
   }
   
   .hero-wrap p {
-    color: white; /* White text */
+    color: #ceaa4d ; /* White text */
     font-size: 1.4em; /* Adjust the font size as needed */
     font-weight: bold; /* Use a bold font weight */
-    text-align: center; /* Center text within the hero section */
+    text-align: left; /* Center text within the hero section */
+  }
+  .main_counter_area {
+    background-size: cover;
+    overflow: hidden;
+    
+    text-align: center; /* Center text within the .main_counter_area */
+    height: 23vh;
   }
   
+.main_counter_area .main_counter_content .single_counter {
+    background: transparent;
+    color: #fff;
+    display: inline-block; /* Display counters inline */
+    margin: 10px; /* Add margin between counters for spacing */
+  }
+  
+.main_counter_area .main_counter_content .single_counter i {
+    font-size: 36px;
+  }
+  /* Add a border on the right side of each counter section */
+.single_counter {
+  border-right: 1px solid #000;
+  padding-right: 15px;
+}
+
+/* Style the last counter section to remove the right border */
+.single_counter:last-child {
+  border-right: none;
+}
+
+/* Add a box around the entire counter section */
+.main_counter_area {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+/* Style the event date header and text */
+.event-date-header-small {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.event-date-text-big {
+  font-size: 24px;
+}
+
+/* Style the statistic counter number */
+.statistic-counter {
+  font-size: 36px;
+  font-weight: bold;
+}
