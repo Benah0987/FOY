@@ -82,14 +82,16 @@ function HomePage() {
 
 
 
-
-
-      {/* <!-- Contact section--> */}
-      <section id="contact" style={{ marginBottom: '40px' }}>
+{/* <!-- Contact section--> */}
+<section id="contact" style={{ marginBottom: '40px' }}>
   <div class="container px-4">
     <div class="row gx-4 justify-content-center">
+      <div class="col-lg-12">
+        <div class="border-bottom border-primary mb-4 pb-3">
+          <h2 class="text-primary">Contact Us</h2>
+        </div>
+      </div>
       <div class="col-lg-8">
-        <h2>Contact us</h2>
         <p class="lead">Feel free to reach out to us. You can use the form below to send us a message, and we'll get back to you as soon as possible.</p>
         
         <form>
@@ -99,6 +101,7 @@ function HomePage() {
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">Email</label>
+
             <input type="email" class="form-control" id="email" name="email" required />
           </div>
           <div class="mb-3">

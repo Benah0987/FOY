@@ -34,10 +34,10 @@ function Footer() {
                   <span className="fa-li"><i className="fas fa-envelope"></i></span><span className="ms-2">foy@gmail.com</span>
                 </li>
                 <li className="mb-3">
-                  <span className="fa-li"><i className="fas fa-phone"></i></span><span className="ms-2"> +254 720 315 726</span>
+                  <span className="fa-li"><i className="fas fa-phone"></i></span><span className="ms-2"><span>Wanyoike ,</span>+254 720 315 726</span>
                 </li>
                 <li className="mb-3">
-                  <span className="fa-li"><i className="fas fa-print"></i></span><span className="ms-2">+ 0724 417121</span>
+                  <span className="fa-li"><i className="fas fa-print"></i></span><span className="ms-2"><span>Charagu ,</span>+254724 417121</span>
                 </li>
               </ul>
             </div>

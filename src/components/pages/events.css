@@ -1,0 +1,27 @@
+/* events.css */
+
+.hero-wrap {
+    height: 110vh;
+    background-color: rgba(0, 0, 0, 0.7); /* Translucent black background */
+    background-image: url('../images/kigooco.jpg'); /* Use the local file path to your image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+  }
+  
+  .hero-wrap h1 {
+    color: white; /* White text */
+    font-size: 4.5em; /* Adjust the font size as needed */
+    font-weight: bold; /* Use a bold font weight */
+    text-align: center; /* Center text within the hero section */
+  }
+  
+  .hero-wrap p {
+    color: white; /* White text */
+    font-size: 1.4em; /* Adjust the font size as needed */
+    font-weight: bold; /* Use a bold font weight */
+    text-align: center; /* Center text within the hero section */
+  }
+  
