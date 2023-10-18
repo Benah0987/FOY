@@ -7,6 +7,21 @@ import passover4 from '../images/passover4.jpg';
 import Pentecost from '../images/Pentecost.jpg';
 import YomKippur from '../images/YomKippur.png';
 import Sukkot from '../images/Sukkot.jpg';
+import Yedidyah from '../images/Yedidyah.jpg';
+import Wanyoike from '../images/Wanyoike.jpg';
+import Moses from '../images/Moses.jpg';
+import Njuguna from '../images/Njuguna.jpg';
+
+const containerStyle = {
+  marginTop: '20px',
+  background: '#eee',
+};
+
+
+const imageStyles = {
+  maxWidth: '100%',
+  height: 'auto',
+};
 
 class Events extends Component {
   constructor(props) {
@@ -65,8 +80,8 @@ class Events extends Component {
           <div className="container">
             <div className="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
               <div className="col-xl-10 ftco-animate" data-scrollax="properties: { translateY: '70%' }">
-                <h1 className="mb-2" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"> Developer <br /><span>Conference 2019</span></h1>
-                <p className="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">December 21-24, 2019. Paris, Italy</p>
+                <h1 className="mb-2" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"> Sukkot <br /><span>festival 2019</span></h1>
+                <p className="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">December 21-24, 2019. Nyahururu, Kenya</p>
               </div>
             </div>
           </div>
@@ -269,7 +284,83 @@ class Events extends Component {
   </div>
 </section>
 
-
+<div className="container" style={containerStyle}>
+      <div className="row justify-content-center">
+        <div className="col-12 col-sm-8 col-lg-6">
+          <div className="section_heading text-center wow fadeInUp" data-wow-delay="0.2s" style={{ visibility: 'visible', animationDelay: '0.2s', animationName: 'fadeInUp' }}>
+            <h3>Our Leaders <span> Team</span></h3>
+            <p>"Our leaders inspire and steer us with their exceptional qualities and guidance, as Proverbs 11:14 reminds us: 'For lack of guidance a nation falls, but victory is won through many advisers.'"</p>
+            <div className="line"></div>
+          </div>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-12 col-sm-6 col-lg-3">
+          <div className="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s" style={{ visibility: 'visible', animationDelay: '0.2s', animationName: 'fadeInUp' }}>
+            <div className="advisor_thumb">
+            <img src={Wanyoike} alt="" style={imageStyles} />
+              <div className="social-info">
+                <a href="#"><i className="fa fa-facebook"></i></a>
+                <a href="#"><i className="fa fa-twitter"></i></a>
+                <a href="#"><i className="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div className="single_advisor_details_info">
+              <h6>Wanyoike Kimama</h6>
+              <p className="designation">Pastor and Mentor</p>
+            </div>
+          </div>
+        </div>
+        <div className="col-12 col-sm-6 col-lg-3">
+          <div className="single_advisor_profile wow fadeInUp" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInUp' }}>
+            <div className="advisor_thumb">
+              <img src= {Njuguna} alt="" style={imageStyles}/>
+              <div className="social-info">
+                <a href="#"><i className="fa fa-facebook"></i></a>
+                <a href="#"><i className="fa fa-twitter"></i></a>
+                <a href="#"><i className="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div className="single_advisor_details_info">
+              <h6>Njuguna</h6>
+              <p className="designation">Leader </p>
+            </div>
+          </div>
+        </div>
+        <div className="col-12 col-sm-6 col-lg-3">
+          <div className="single_advisor_profile wow fadeInUp" data-wow-delay="0.4s" style={{ visibility: 'visible', animationDelay: '0.4s', animationName: 'fadeInUp' }}>
+            <div className="advisor_thumb">
+              <img src={Moses} alt="" style={imageStyles}/>
+              <div className="social-info">
+                <a href="#"><i className="fa fa-facebook"></i></a>
+                <a href="#"><i className="fa fa-twitter"></i></a>
+                <a href="#"><i className="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div className="single_advisor_details_info">
+              <h6>Moses</h6>
+              <p className="designation">Leader </p>
+            </div>
+          </div>
+        </div>
+        <div className="col-12 col-sm-6 col-lg-3">
+          <div className="single_advisor_profile wow fadeInUp" data-wow-delay="0.5s" style={{ visibility: 'visible', animationDelay: '0.5s', animationName: 'fadeInUp' }}>
+            <div className="advisor_thumb">
+              <img src={Yedidyah} alt="" style={imageStyles}/>
+              <div className="social-info">
+                <a href="#"><i className="fa fa-facebook"></i></a>
+                <a href="#"><i className="fa fa-twitter"></i></a>
+                <a href="#"><i className="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div className="single_advisor_details_info">
+              <h6>Yedidyah</h6>
+              <p className="designation">leader and Mentor</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     </div>
   );
