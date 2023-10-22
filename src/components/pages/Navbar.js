@@ -9,6 +9,7 @@ function Navbar() {
       <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container-fluid">
           <Link to="/" className="navbar-brand" style={{ color: 'blue', fontWeight: 'bold' }}>
+            {/* You can add your image here */}
             <img src={taa} alt="Family of Yahweh Logo" style={{ marginRight: '10px' }} />
             Family of Yahweh
           </Link>
@@ -35,33 +36,10 @@ function Navbar() {
                   Events
                 </Link>
               </li>
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="/#"
-                  id="membersDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  style={{ color: 'black' }}
-                >
+              <li className="nav-item">
+                <Link to="/members" className="nav-link" style={{ color: 'black' }}>
                   Members
-                </a>
-                <div className="dropdown-menu" aria-labelledby="membersDropdown">
-                  <Link to="/members/men" className="dropdown-item">
-                    Men
-                  </Link>
-                  <Link to="/members/women" className="dropdown-item">
-                    Women
-                  </Link>
-                  <Link to="/members/youth" className="dropdown-item">
-                    Youth
-                  </Link>
-                  <Link to="/members/children" className="dropdown-item">
-                    Children
-                  </Link>
-                </div>
+                </Link>
               </li>
               <li className="nav-item">
                 <Link to="/faq" className="nav-link" style={{ color: 'black' }}>

@@ -3,7 +3,7 @@
 .hero-wrap {
     height: 110vh;
     background-color: rgba(0, 0, 0, 0.7); /* Translucent black background */
-    background-image: url('../images/kigooco.jpg'); /* Use the local file path to your image */
+    background-image: url('../images/kigooco6.jpg'); /* Use the local file path to your image */
     background-size: cover;
     background-position: center;
     display: flex;
