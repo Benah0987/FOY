@@ -1,14 +1,15 @@
 import React from 'react';
+import './donation.css'
 
 function Donation() {
   return (
     <div>
-      <header className="masthead">
+            <header className="masthead">
         <div className="container position-relative">
           <div className="row justify-content-center">
             <div className="col-xl-6">
               <div className="text-center text-white">
-                <h1 className="mb-5">Generate more leads with a professional landing page!</h1>
+                <h1 className="mb-5">Support Our Mission</h1>
                 <form className="form-subscribe" id="contactForm" data-sb-form-api-token="API_TOKEN">
                   <div className="row">
                     <div className="col">
@@ -17,18 +18,17 @@ function Donation() {
                       <div className="invalid-feedback text-white" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
                     </div>
                     <div className="col-auto">
-                      <button className="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+                      <button className="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Donate Now</button>
                     </div>
                   </div>
                   <div className="d-none" id="submitSuccessMessage">
                     <div className="text-center mb-3">
-                      <div className="fw-bolder">Form submission successful!</div>
-                      <p>To activate this form, sign up at</p>
-                      <a className="text-white" href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                      <div className="fw-bolder">Thank you for your donation!</div>
+                      <p>Your support helps us achieve our mission.</p>
                     </div>
                   </div>
                   <div className="d-none" id="submitErrorMessage">
-                    <div className="text-center text-danger mb-3">Error sending message!</div>
+                    <div className="text-center text-danger mb-3">Error processing your donation. Please try again.</div>
                   </div>
                 </form>
               </div>
@@ -36,36 +36,54 @@ function Donation() {
           </div>
         </div>
       </header>
-
       <section className="features-icons bg-light text-center">
         <div className="container">
           <div className="row">
             <div className="col-lg-4">
               <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                <div className="features-icons-icon d-flex"><i className="bi-window m-auto text-primary"></i></div>
-                <h3>Fully Responsive</h3>
-                <p className="lead mb-0">This theme will look great on any device, no matter the size!</p>
+              <div className="features-icons-icon d-flex">
+                  <i className="fas fa-landmark m-auto text-primary"></i>
+                </div>
+                <h3>Support Our Land Purchase</h3>
+                <p className="lead mb-0">
+                  We are embarking on a mission to purchase land within Nairobi to expand our ministry.
+                  Your generous donations will help us acquire the land we need for our projects and community outreach.
+                </p>
               </div>
             </div>
             <div className="col-lg-4">
               <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                <div className="features-icons-icon d-flex"><i className="bi-layers m-auto text-primary"></i></div>
-                <h3>Bootstrap 5 Ready</h3>
-                <p className="lead mb-0">Featuring the latest build of the new Bootstrap 5 framework!</p>
+              <div className="features-icons-icon d-flex">
+                  <i className="fas fa-church m-auto text-primary"></i>
+                </div>
+                <h3>Support Gospel Outreach</h3>
+                <p className="lead mb-0">
+                  Our mission includes spreading the gospel far and wide. Your donations will help us
+                  reach more people with the message of faith and love.
+                </p>
               </div>
             </div>
             <div className="col-lg-4">
               <div className="features-icons-item mx-auto mb-0 mb-lg-3">
-                <div className="features-icons-icon d-flex"><i className="bi-terminal m-auto text-primary"></i></div>
-                <h3>Easy to Use</h3>
-                <p className="lead mb-0">Ready to use with your own content, or customize the source files!</p>
+              <div className="features-icons-icon d-flex">
+                  <i className="fas fa-hands-helping m-auto text-primary"></i>
+                </div>
+                <h3>Help the Needy</h3>
+                <p className="lead mb-0">
+                  Your contributions will also go towards supporting those in need within our community.
+                  Together, we can make a positive impact and provide assistance to those facing challenges.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
+  
 
       <section className="showcase">
+      <div className="showcase-header">
+          <h2>Reason for Helping</h2>
+        </div>
         <div className="container-fluid p-0">
           <div className="row g-0">
             <div className="col-lg-6 order-lg-2 text-white showcase-img" style={{ backgroundImage: 'url("assets/img/bg-showcase-1.jpg")' }}></div>
