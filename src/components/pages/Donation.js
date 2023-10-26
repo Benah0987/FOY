@@ -1,43 +1,62 @@
 import React from 'react';
-import './donation.css'
+import './donation.css';
+import support from '../images/support.jpg';
+import empower from '../images/empower.jpeg';
+import good from '../images/good.avif';
+import salvador from '../images/Salvador.jpg';
+import BaRiyah from '../images/BaRiyah.jpg';
+import singer from '../images/singer.jpg';
+import hands from '../images/hands.avif';
+import help from '../images/help.avif';
 
 function Donation() {
+  const headerStyle = {
+    backgroundImage: `url(${hands})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center center'
+  };
+
+  const sectionStyle = {
+    backgroundImage: `url(${help})`,
+    paddingTop: '9rem',
+    paddingBottom: '9rem',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+
+    backgroundPosition: 'center center'
+  };
+
   return (
     <div>
-            <header className="masthead">
+      <header className="masthead" style={headerStyle}>
         <div className="container position-relative">
           <div className="row justify-content-center">
             <div className="col-xl-6">
               <div className="text-center text-white">
                 <h1 className="mb-5">Support Our Mission</h1>
-                <form className="form-subscribe" id="contactForm" data-sb-form-api-token="API_TOKEN">
-                  <div className="row">
-                    <div className="col">
-                      <input className="form-control form-control-lg" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
-                      <div className="invalid-feedback text-white" data-sb-feedback="emailAddress:required">Email Address is required.</div>
-                      <div className="invalid-feedback text-white" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
-                    </div>
-                    <div className="col-auto">
-                      <button className="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Donate Now</button>
-                    </div>
-                  </div>
-                  <div className="d-none" id="submitSuccessMessage">
-                    <div className="text-center mb-3">
-                      <div className="fw-bolder">Thank you for your donation!</div>
-                      <p>Your support helps us achieve our mission.</p>
-                    </div>
-                  </div>
-                  <div className="d-none" id="submitErrorMessage">
-                    <div className="text-center text-danger mb-3">Error processing your donation. Please try again.</div>
-                  </div>
-                </form>
+                <div className="contact-info">
+                  <p>For inquiries and support:</p>
+                  <p>
+                    <i className="fas fa-phone"></i> Call us at:{' '}
+                    <a href="tel:+123456789">+(254)720 315726</a>
+                  </p>
+                  <p>
+                    <i className="fas fa-envelope"></i> Email us at:{' '}
+                    <a href="mailto:info@example.com">foy@gmail.com</a>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </header>
-      <section className="features-icons bg-light text-center">
+
+      <section className="features-icons bg-light text-center" style={{ paddingTop: '9rem', paddingBottom: '9rem' }}>
         <div className="container">
+        <div className="showcase-header">
+          <h2 style={{ marginBottom: '5px' }}>Ongoing Projects</h2>
+        </div>
           <div className="row">
             <div className="col-lg-4">
               <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
@@ -79,96 +98,108 @@ function Donation() {
         </div>
       </section>
   
-
-      <section className="showcase">
-      <div className="showcase-header">
-          <h2>Reason for Helping</h2>
+      <div className="container">
+  <section className="showcase" style={{ paddingTop: '9rem', paddingBottom: '9rem' }}>
+    <div className="showcase-header">
+      <h2 style={{ marginBottom: '5px' }}>Why to Donate</h2>
+    </div>
+    <div className="container-fluid p-0">
+      <div className="row g-0">
+        <div className="col-lg-6 order-lg-1 my-auto showcase-text" style={{ marginBottom: '20px' }}>
+          <h2>Supporting Our Ministry</h2>
+          <p className="lead mb-0">By donating, you help us expand our ministry's reach and impact. Your generous contributions empower us to spread the message of faith and love to a broader audience.</p>
         </div>
-        <div className="container-fluid p-0">
-          <div className="row g-0">
-            <div className="col-lg-6 order-lg-2 text-white showcase-img" style={{ backgroundImage: 'url("assets/img/bg-showcase-1.jpg")' }}></div>
-            <div className="col-lg-6 order-lg-1 my-auto showcase-text">
-              <h2>Fully Responsive Design</h2>
-              <p className="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
-            </div>
-          </div>
-          <div className="row g-0">
-            <div className="col-lg-6 text-white showcase-img" style={{ backgroundImage: 'url("assets/img/bg-showcase-2.jpg")' }}></div>
-            <div className="col-lg-6 my-auto showcase-text">
-              <h2>Updated For Bootstrap 5</h2>
-              <p className="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 5 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 5!</p>
-            </div>
-          </div>
-          <div className="row g-0">
-            <div className="col-lg-6 order-lg-2 text-white showcase-img" style={{ backgroundImage: 'url("assets/img/bg-showcase-3.jpg")' }}></div>
-            <div className="col-lg-6 order-lg-1 my-auto showcase-text">
-              <h2>Easy to Use & Customize</h2>
-              <p className="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
-            </div>
-          </div>
+        <div className="col-lg-6">
+          <img
+            src={support}
+            alt="Supporting Our Ministry"
+            className="img-fluid"
+            style={{ height: '400px', width: 'auto' }}
+          />
         </div>
-      </section>
-
-      <section className="testimonials text-center bg-light">
-        <div className="container">
-          <h2 className="mb-5">What people are saying...</h2>
-          <div className="row">
-            <div className="col-lg-4">
-              <div className="testimonial-item mx-auto mb-5 mb-lg-0">
-                <img className="img-fluid rounded-circle mb-3" src="assets/img/testimonials-1.jpg" alt="..." />
-                <h5>Margaret E.</h5>
-                <p className="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
-              </div>
-            </div>
-            <div className="col-lg-4">
-              <div className="testimonial-item mx-auto mb-5 mb-lg-0">
-                <img className="img-fluid rounded-circle mb-3" src="assets/img/testimonials-2.jpg" alt="..." />
-                <h5>Fred S.</h5>
-                <p className="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
-              </div>
-            </div>
-            <div className="col-lg-4">
-              <div className="testimonial-item mx-auto mb-5 mb-lg-0">
-                <img className="img-fluid rounded-circle mb-3" src="assets/img/testimonials-3.jpg" alt="..." />
-                <h5>Sarah W.</h5>
-                <p className="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
-              </div>
-            </div>
-          </div>
+      </div>
+      <div className="row g-0">
+        <div className="col-lg-6 my-auto showcase-text" style={{ marginBottom: '20px' }}>
+          <h2>Empowering Change</h2>
+          <p className="lead mb-0">Your donations support projects that bring about positive change within our community. We believe in making a difference in the lives of our neighbors by providing assistance to those facing challenges.</p>
         </div>
-      </section>
+        <div className="col-lg-6">
+          <img
+            src={good}
+            alt="Empowering Change"
+            className="img-fluid"
+            style={{ height: '400px', width: 'auto' }}
+          />
+        </div>
+      </div>
+      <div className="row g-0">
+        <div className="col-lg-6" style={{ marginBottom: '20px' }}>
+          <img
+            src={empower}
+            alt="Making an Impact"
+            className="img-fluid"
+            style={{ height: '400px', width: 'auto' }}
+          />
+        </div>
+        <div className="col-lg-6 order-lg-1 my-auto showcase-text" style={{ marginBottom: '20px' }}>
+          <h2>Making an Impact</h2>
+          <p className="lead mb-0">With your help, we can achieve our mission and create a better world. Your contributions play a vital role in supporting our initiatives and projects. Join us in making a positive impact today!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
 
-      <section className="call-to-action text-white text-center" id="signup">
+
+    
+
+<section className="testimonials text-center bg-light" style={{ paddingTop: '9rem', paddingBottom: '9rem' }}>
+  <div className="container">
+    <h2 className="mb-5">Our Project Leaders</h2>
+    <div className="row">
+      <div className="col-lg-4">
+        <div className="testimonial-item mx-auto mb-5 mb-lg-0">
+          <img className="img-fluid rounded-circle mb-3" src={singer} alt="Jecinta W." style={{ width: '100px', height: '100px' }} />
+          <h5>Jecinta W.</h5>
+          <p className="font-weight-light mb-0">"We are dedicated to acquiring land for our ministry's growth. Your generous contributions make this vision a reality. Join us in making a lasting impact!"</p>
+        </div>
+      </div>
+      <div className="col-lg-4">
+        <div className="testimonial-item mx-auto mb-5 mb-lg-0">
+          <img className="img-fluid rounded-circle mb-3" src={salvador} alt="Salvador" style={{ width: '100px', height: '100px' }} />
+          <h5>Salvador</h5>
+          <p className="font-weight-light mb-0">"With your support, we can extend our outreach and touch more lives. Your contributions empower us to share the message of faith and love with a broader audience. Be part of this transformative journey!"</p>
+        </div>
+      </div>
+      <div className="col-lg-4">
+        <div className="testimonial-item mx-auto mb-5 mb-lg-0">
+          <img className="img-fluid rounded-circle mb-3" src={BaRiyah} alt="Geoffrey K." style={{ width: '100px', height: '100px' }} />
+          <h5>Geoffrey K.</h5>
+          <p className="font-weight-light mb-0">"Your contributions go a long way in supporting those in need and helping us create a better world. We're grateful for your generosity and invite you to be part of our mission. Together, we can make a significant impact!"</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+ 
+<section className="call-to-action text-white text-center" id="contact" style={sectionStyle}>
         <div className="container position-relative">
           <div className="row justify-content-center">
             <div className="col-xl-6">
-              <h2 className="mb-4">Ready to get started? Sign up now!</h2>
-              <form className="form-subscribe" id="contactFormFooter" data-sb-form-api-token="API_TOKEN">
-                <div className="row">
-                  <div className="col">
-                    <input className="form-control form-control-lg" id="emailAddressBelow" type="email" placeholder="Email Address" data-sb-validations="required,email" />
-                    <div className="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:required">Email Address is required.</div>
-                    <div className="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:email">Email Address Email is not valid.</div>
-                  </div>
-                  <div className="col-auto">
-                    <button className="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
-                  </div>
-                </div>
-                <div className="d-none" id="submitSuccessMessage">
-                  <div className="text-center mb-3">
-                    <div className="fw-bolder">Form submission successful!</div>
-                    <p>To activate this form, sign up at</p>
-                    <a className="text-white" href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                  </div>
-                </div>
-                <div className="d-none" id="submitErrorMessage">
-                  <div className="text-center text-danger mb-3">Error sending message!</div>
-                </div>
-              </form>
+              <h2 className="mb-4">Need Assistance? Contact Us!</h2>
+              <div className="contact-info">
+                <p><i className="fas fa-phone"></i> Call our Support Team at: <a href="tel:+123456789">+ (254)720 315726</a></p>
+                <p><i className="fas fa-envelope"></i> Email us at: <a href="mailto:info@example.com">foy@gmail.com</a></p>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
+
     </div>
   );
 }
