@@ -1,5 +1,8 @@
 import React from 'react';
 import './about.css'
+import BaRiyah4 from '../images/BaRiyah4.jpg'
+import Wanyoike from '../images/Wanyoike.jpg'
+import Moses from '../images/Moses.jpg'
 
 function About() {
   const jumbotronStyle = {
@@ -21,103 +24,107 @@ function About() {
 
   const cardData = [
     {
-      image: 'https://images.pexels.com/photos/2746187/pexels-photo-2746187.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-      name: 'SomeOne Famous',
-      role: 'Creative Designer',
+      image: BaRiyah4,
+      name: 'Geoffrey KImama',
+      role: 'Pastor',
+      place: 'Nyahururu Branch',
+
+    },
+
+    {
+      image: Wanyoike,
+      name: 'Wanyoike Kimama',
+      role: 'Pastor ',
+      place: 'Nairobi Branch'
     },
     {
-      image: 'https://images.pexels.com/photos/381843/pexels-photo-381843.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-      name: 'SomeOne Famous',
-      role: 'Creative Designer',
-    },
-    {
-      image: 'https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-      name: 'SomeOne Famous',
-      role: 'Creative Designer',
+      image: Moses,
+      name: 'Moses',
+      role: 'Leader',
+      place: 'Nyahururu Branch'
     },
   ];
   return (
     <div>
-      {/* Carousel */}
       <div id="carouselBasicExample" className="carousel slide carousel-fade" data-mdb-ride="carousel">
-        {/* Indicators */}
-        <div className="carousel-indicators">
-          <button
-            type="button"
-            data-mdb-target="#carouselBasicExample"
-            data-mdb-slide-to="0"
-            className="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-mdb-target="#carouselBasicExample"
-            data-mdb-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-mdb-target="#carouselBasicExample"
-            data-mdb-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
+  {/* Indicators */}
+  <div className="carousel-indicators">
+    <button
+      type="button"
+      data-mdb-target="#carouselBasicExample"
+      data-mdb-slide-to="0"
+      className="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      type="button"
+      data-mdb-target="#carouselBasicExample"
+      data-mdb-slide-to="1"
+      aria-label="Slide 2"
+    ></button>
+    <button
+      type="button"
+      data-mdb-target="#carouselBasicExample"
+      data-mdb-slide-to="2"
+      aria-label="Slide 3"
+    ></button>
+  </div>
 
-        {/* Inner */}
-        <div className="carousel-inner">
-          {/* Single item */}
-          <div className="carousel-item active">
-            <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(15).webp"
-              className="d-block w-100"
-              alt="Sunset Over the City"
-            />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </div>
-          </div>
-
-          {/* Single item */}
-          <div className="carousel-item">
-            <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(22).webp"
-              className="d-block w-100"
-              alt="Canyon at Night"
-            />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-
-          {/* Single item */}
-          <div className="carousel-item">
-            <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(23).webp"
-              className="d-block w-100"
-              alt="Cliff Above a Stormy Sea"
-            />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </div>
-          </div>
-        </div>
-        {/* Inner */}
-
-        {/* Controls */}
-        <button className="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button className="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Next</span>
-        </button>
+  {/* Inner */}
+  <div className="carousel-inner">
+    {/* Single item */}
+    <div className="carousel-item active">
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(15).webp"
+        className="d-block w-100"
+        alt="Sunset Over the City"
+      />
+      <div className="carousel-caption d-none d-md-block">
+        <h5>Family of Yahweh</h5>
+        <p>Welcome to the Family of Yahweh, a place of peace and love.</p>
       </div>
-      {/* End Carousel */}
+    </div>
+
+    {/* Single item */}
+    <div className="carousel-item">
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(22).webp"
+        className="d-block w-100"
+        alt="Canyon at Night"
+      />
+      <div className="carousel-caption d-none d-md-block">
+        <h5>Our Community</h5>
+        <p>We gather to worship and celebrate our faith in the Family of Yahweh.</p>
+      </div>
+    </div>
+
+    {/* Single item */}
+    <div className="carousel-item">
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(23).webp"
+        className="d-block w-100"
+        alt="Cliff Above a Stormy Sea"
+      />
+      <div className="carousel-caption d-none d-md-block">
+        <h5>United in Faith</h5>
+        <p>Join us as we grow together in the love of Yahweh and our community.</p>
+      </div>
+    </div>
+  </div>
+  {/* Inner */}
+
+  {/* Controls */}
+  <button className="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Previous</span>
+  </button>
+  <button className="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Next</span>
+  </button>
+</div>
+
 
       {/* vision, mission, beliefs */}
       <div className="container bootstrap snippets bootdeys">
@@ -203,49 +210,52 @@ function About() {
       </p>
       <p>
         "Dear friends, let us love one another, for love comes from God. Everyone who loves
-        has been born of God and knows God. Whoever does not love does not know God, because
-        God is love."
+        has been born of Yahweh and knows God. Whoever does not love does not know Yahweh, because
+       Yahweh is love."
       </p>
     </div>
 
       {/* end of display */}
       {/* our leaders */}
-      <div style={{ minHeight: '100vh', background: 'linear-gradient(to bottom, #000428, #004683)' }}>
-      <div className="container" style={cardContainerStyle}>
-      <div className="row">
-        {cardData.map((card, index) => (
-          <div className="col-lg-4" key={index} style={cardColStyle}>
-            <div className="card p-0">
-              <div className="card-image">
-                <img src={card.image} alt="" />
-              </div>
-              <div className="card-content d-flex flex-column align-items-center">
-                <h4 className="pt-2">{card.name}</h4>
-                <h5>{card.role}</h5>
-                <ul className="social-icons d-flex justify-content-center">
-                  <li style={{ '--i': 1 }}>
-                    <a href="#">
-                      <span className="fab fa-facebook"></span>
-                    </a>
-                  </li>
-                  <li style={{ '--i': 2 }}>
-                    <a href="#">
-                      <span className="fab fa-twitter"></span>
-                    </a>
-                  </li>
-                  <li style={{ '--i': 3 }}>
-                    <a href="#">
-                      <span className="fab fa-instagram"></span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+      <div style={{ minHeight: '100vh', background: 'white', marginBottom: '20px' }}>
+  <div className="container" style={{ marginTop: '100px' }}>
+    <h2 style={{ textAlign: 'center', marginBottom: '20px', color: 'black' }}>Our Leaders</h2>
+    <div className="row">
+      {cardData.map((card, index) => (
+        <div className="col-lg-4" key={index} style={{ display: 'flex', justifyContent: 'center' }}>
+          <div className="card p-0">
+            <div className="card-image">
+              <img src={card.image} alt="" />
+            </div>
+            <div className="card-content d-flex flex-column align-items-center">
+              <h4 className="pt-2">{card.name}</h4>
+              <h5>{card.role}</h5>
+              <p>{card.place}</p> {/* Add the place */}
+              <ul className="social-icons d-flex justify-content-center">
+                <li style={{ '--i': 1 }}>
+                  <a href="#">
+                    <span className="fab fa-facebook"></span>
+                  </a>
+                </li>
+                <li style={{ '--i': 2 }}>
+                  <a href="#">
+                    <span className="fab fa-twitter"></span>
+                  </a>
+                </li>
+                <li style={{ '--i': 3 }}>
+                  <a href="#">
+                    <span className="fab fa-instagram"></span>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
-    </div>
+  </div>
+</div>
+
       {/* end of leaders */}
     </div>
   );
