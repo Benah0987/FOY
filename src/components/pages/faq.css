@@ -101,15 +101,15 @@
     border: 0!important;
 }
 .card {
-    position: relative !important;
-    display: flex !important;
-    flex-direction: column !important;
-    min-width: 0 !important;
-    word-wrap: break-word !important;
-    background-color: #fff !important;
-    background-clip: border-box !important;
-    border: 1px solid rgba(0,0,0,.125) !important;
-    border-radius: 0.25rem !important;
+    position: relative ;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
 }
 
 section {

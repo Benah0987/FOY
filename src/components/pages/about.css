@@ -141,14 +141,14 @@ h2 {
   margin-top: 20px; /* Adjust the margin as needed */
   /* Add more styles as per your design preferences */
 }
-/* .container {
+.container {
   margin-top: 100px;
 }
 
 .container .row .col-lg-4 {
   display: flex;
   justify-content: center;
-} */
+}
 
 .card {
   position: relative;
