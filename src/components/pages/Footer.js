@@ -12,7 +12,7 @@ function Footer() {
               <p>
               "Join our ever-growing community and be a part of a place where faith meets harmony, and love knows no bounds.
               
-               Embrace the warmth of togetherness and discover the joy of worshiping together
+              
               </p>
               <p>
               Start your journey with us today and experience the beauty of faith and unity. We welcome you to the Family of Yahweh - where love, peace, and spiritual growth flourish."
