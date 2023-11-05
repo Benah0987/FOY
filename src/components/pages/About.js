@@ -22,6 +22,13 @@ function About() {
     justifyContent: 'center',
   };
 
+  const sectionStyle = {
+    padding: '40px 0',
+    overflow: 'hidden',
+    background: '#fff',
+    marginBottom: '20px', // Adding margin-bottom to sections
+  };
+
   const cardData = [
     {
       image: BaRiyah4,
@@ -46,7 +53,7 @@ function About() {
   ];
   return (
     <div>
-      <div id="carouselBasicExample" className="carousel slide carousel-fade" data-mdb-ride="carousel">
+      <div id="carouselBasicExample" className="carousel slide carousel-fade" data-mdb-ride="carousel" style={sectionStyle}>
   {/* Indicators */}
   <div className="carousel-indicators">
     <button
@@ -127,7 +134,7 @@ function About() {
 
 
       {/* vision, mission, beliefs */}
-      <div className="container bootstrap snippets bootdeys">
+      <div className="container bootstrap snippets bootdeys" style={sectionStyle}>
 
       <h2 className="text-center">Our Beliefs</h2>
       <div className="row">
@@ -152,7 +159,7 @@ function About() {
           </div>
         </div>
 
-        <div className="col-md-4 col-sm-6 content-card">
+        <div className="col-md-4 col-sm-6 content-card" >
           <div className="card-big-shadow">
             <div
               className="card card-just-text"

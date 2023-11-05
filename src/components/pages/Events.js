@@ -87,7 +87,7 @@ class Events extends Component {
           </div>
         </div>
 
-        <section className="counter">
+        <section className="counter mt-4">
           <div className="main_counter_area">
             <div className="overlay p-y-3">
               <div className="container">

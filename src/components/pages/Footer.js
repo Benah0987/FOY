@@ -10,12 +10,12 @@ function Footer() {
             <div className="col-lg-4 col-md-12 mb-4 mb-md-0">
               <h5 className="text-uppercase mb-4">Family of Yahweh</h5>
               <p>
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-                voluptatum deleniti atque corrupti.
+              "Join our ever-growing community and be a part of a place where faith meets harmony, and love knows no bounds.
+              
+               Embrace the warmth of togetherness and discover the joy of worshiping together
               </p>
               <p>
-                Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
-                molestias.
+              Start your journey with us today and experience the beauty of faith and unity. We welcome you to the Family of Yahweh - where love, peace, and spiritual growth flourish."
               </p>
               <div className="mt-4">
                 <a href="#" className="btn btn-floating btn-primary btn-lg"><i className="fab fa-facebook-f"></i></a>
@@ -68,8 +68,8 @@ function Footer() {
           </div>
         </div>
         <div className="text-center p-3" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-          © 2023 Copyright:
-          <a className="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+          Family of Yahweh
+          <a className="text-white" href="https://mdbootstrap.com/">website.com</a>
         </div>
       </footer>
     </div>

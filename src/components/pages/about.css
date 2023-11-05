@@ -1,4 +1,4 @@
-body{margin-top:40px;}
+
 
 .card-big-shadow {
     max-width: 320px;
@@ -141,14 +141,12 @@ h2 {
   margin-top: 20px; /* Adjust the margin as needed */
   /* Add more styles as per your design preferences */
 }
-.container {
-  margin-top: 100px;
-}
 
-.container .row .col-lg-4 {
+
+/* .container .row .col-lg-4 {
   display: flex;
   justify-content: center;
-}
+} */
 
 .card {
   position: relative;
@@ -156,7 +154,7 @@ h2 {
   margin: 0 !important;
   border-radius: 20px;
   overflow: hidden;
-  max-width: 300px;
+  /* max-width: 300px; */
   max-height: auto;
   cursor: pointer;
   border: none;
